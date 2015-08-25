@@ -1,10 +1,14 @@
-var http = require('http');
-http.createServer(function(req,res){
-    res.writeHead(200);
-    res.write('Hello World!');
-    res.end();
-}).listen(process.env.PORT || 3000);
+var express = require('express');
+var app = express();
+var path = require('path');
 
-//trying to get it to return port number
-//, fuction(){var port = server.address().port;console.log('listening on port: ',port)};
+var index = require('./routes/index');
 
+app.use('/', index);
+
+app.use(express.static(path.join(__dirname, './public')));
+
+var server = app.listen(process.env.PORT || 3000, function() {
+    var port = server.address().port;
+    console.log("Listening on port : ", port);
+});

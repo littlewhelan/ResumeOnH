@@ -1,32 +1,23 @@
-p {
-	font-family:verdana;
-	color:#000000;	
-}
-
-h1 {
+#h1 {
 	text-align: center; 
 	margin-bottom: 10px
 }
 
-body {
-	background-color: #f0f2f3;
-}
-
-h2,h3 {
+.headings {
 	margin-bottom: 5px;
 	margin-top: 5px;
 	border-bottom: 1px solid black;
 }
 
-ul {
+.jobs {
 	margin-top: 5px;
 	margin-bottom: 10px;
 	line-height: 25px;
 }
 
-img {
+#photo {
 	padding: 3px;
-	border: 5px solid black;
+	border: 5px solid #000000;
 	background-color:#708090;
 	float: right; 
 
@@ -53,13 +44,12 @@ img {
 	float: right;
 }
 
-/* css changes to remove if I want to use this as a resume */
-
 #content{display: none;
 }
 
 #button{
 	font-size: 20px;
+	font-weight: bold;
 	width:150px;
 	height:50px;
 	background-color:#009688;
@@ -69,6 +59,4 @@ img {
 	margin-top: 50px;
 }
 
-li:nth-child(odd){
-	background-color:#e2e5e8;
-}
+
